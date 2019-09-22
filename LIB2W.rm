@@ -2,6 +2,7 @@
 - ensemble-aware stochastic topological mapper 
     - Per ensemble element
     - Per spatial region
+- K-d tree implementation
 - FPE aware deviate generator
     - Formula based
     - Vector + matrix based
