@@ -33,4 +33,5 @@ scribe - pretty print of structs
 stash - fast simple value stash
 statistics - math and statistics functions
 table_rex - nice table displays
+typedstruct - structs with types
 yeec - Erlang parsing
