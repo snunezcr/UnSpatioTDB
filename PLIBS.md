@@ -19,6 +19,7 @@ getopt - options parser
 guardsafe - macros that expand safely into code within guards
 immortal - fault tolerance for OTP Elixir
 json - parse and generate json
+leex - lexical analysis
 matrex - fast matrix arithmetics
 number - definition of the property of being a number
 opq - in-memory FIFO queueing
@@ -32,4 +33,4 @@ scribe - pretty print of structs
 stash - fast simple value stash
 statistics - math and statistics functions
 table_rex - nice table displays
-
+yeec - Erlang parsing
