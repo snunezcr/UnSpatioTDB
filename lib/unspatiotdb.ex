@@ -1,6 +1,6 @@
-defmodule Usdb do
+defmodule UnSpatioTDB do
   @moduledoc """
-  Documentation for Usdb.
+  Documentation for UnSpatioTDB.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Usdb do
 
   ## Examples
 
-      iex> Usdb.hello()
+      iex> UnSpatioTDB.hello()
       :world
 
   """
