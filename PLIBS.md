@@ -27,6 +27,7 @@ parallelstream - parallelization of stream operations
 progressbar - progress bars and spinners
 ratatoiulle - terminal UI builder
 ratio - rational numbers
+sbroker - time-based events
 scribe - pretty print of structs
 stash - fast simple value stash
 statistics - math and statistics functions

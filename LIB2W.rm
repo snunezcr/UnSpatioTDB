@@ -1,0 +1,9 @@
+- time-constrained (hysteresis,propagation) queue
+- ensemble-aware stochastic topological mapper 
+    - Per ensemble element
+    - Per spatial region
+- FPE aware deviate generator
+    - Formula based
+    - Vector + matrix based
+- Inexpensive FFT random number generator
+
