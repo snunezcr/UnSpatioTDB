@@ -10,6 +10,7 @@ cuid - collision resistant ids
 cvslixir - read/write CSV files
 dataframe - Pandas-like dataframe
 datastructures - datastructures for elixir
+erlynum - real and complex number operations
 exactor - simplified actors
 expat - generalized patterns
 ex_doc - generate documentation for Elixir project
