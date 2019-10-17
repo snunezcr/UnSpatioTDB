@@ -1,6 +1,9 @@
 defmodule UnSpatioTDB do
   @moduledoc """
-  Documentation for UnSpatioTDB.
+  Santiago Nunez-Corrales @ 2019
+  University of Illinois at Urbana-Champaign
+
+  UnSpatioTDB: a distributed spatio-temporal database
   """
 
   @doc """
@@ -14,5 +17,6 @@ defmodule UnSpatioTDB do
   """
   def hello do
     :world
+    IO.puts "Running UnpatioDB\n"
   end
 end
