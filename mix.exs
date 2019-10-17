@@ -14,6 +14,7 @@ defmodule UnSpatioTDB.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      applications: [:complex_num],
       extra_applications: [:logger]
     ]
   end
@@ -21,7 +22,8 @@ defmodule UnSpatioTDB.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:sbroker, "~> 1.0-beta"}
+      {:sbroker, "~> 1.0-beta"},
+      {:complex_num, "~> 1.0.0"}
     ]
   end
 end
