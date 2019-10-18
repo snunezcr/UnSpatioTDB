@@ -11,19 +11,25 @@ defmodule UnSpatioTDB.MixProject do
     ]
   end
 
-  # Run "mix help compile.app" to learn about applications.
   def application do
     [
       applications: [:complex_num],
-      extra_applications: [:logger]
+      extra_applications: [:logger],
+      mod: {
+        UnSpatioTDB.Application, []
+      },
+      env: [
+        pos_complex_mode: :cartesian,
+        fld_complex_mode: :cartesian
+      ]
     ]
   end
 
-  # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:sbroker, "~> 1.0-beta"},
-      {:complex_num, "~> 1.0.0"}
+      {:bunyan, ">= 0.0.0"},
+      {:complex_num, "~> 1.0.0"},
+      {:sbroker, "~> 1.0-beta"}
     ]
   end
 end
