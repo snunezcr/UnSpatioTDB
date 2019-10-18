@@ -24,3 +24,6 @@ usdb-*.tar
 
 # Ignore intermediate test output
 .elixir_ls
+
+# Ignore locks from Mix
+mix.lock
