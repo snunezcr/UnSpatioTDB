@@ -22,3 +22,5 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 usdb-*.tar
 
+# Ignore intermediate test output
+.elixir_ls
