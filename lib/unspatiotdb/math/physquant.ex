@@ -9,6 +9,9 @@ defprotocol UnSpatioTDB.Math.PhysQuant do
   @doc "Change a physical quantity using a magnitude and direction"
   def change(quantity, magnitude, direction)
 
+  @doc "Lookup the current value without the field disturbance - internal"
+  def lookup(quantity)
+
   @doc "Obtain the zero of a physical quantity"
   def zero(quantity)
 
