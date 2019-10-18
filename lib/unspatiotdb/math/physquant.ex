@@ -24,7 +24,7 @@ defprotocol UnSpatioTDB.Math.PhysQuant do
   @doc "Compute arithmetic operations"
   def add(qa, qb)
   def sub(qa, qb)
-  def mult(qa, qb)
+  def mul(qa, qb)
   def div(qa, qb)
   def pow(qa, qb)
   def exp(quantity)

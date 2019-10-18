@@ -19,8 +19,16 @@ defmodule UnSpatioTDB.MixProject do
         UnSpatioTDB.Application, []
       },
       env: [
+        # Configuration of the number system representation.
+        # Some field problems are simpler to define in polar coordinates
         pos_complex_mode: :cartesian,
-        fld_complex_mode: :cartesian
+        fld_complex_mode: :cartesian,
+        # 3D harmonic oscillator configuration
+        harm_osc_params: %{
+          k1: 1,
+          K2: 1,
+          k3: 1
+        }
       ]
     ]
   end
