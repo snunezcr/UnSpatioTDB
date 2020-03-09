@@ -17,6 +17,6 @@ defmodule UnSpatioTDB do
   """
   def hello do
     :world
-    IO.puts "Running UnpatioDB\n"
+    IO.puts "Running UnSpatioDB\n"
   end
 end
