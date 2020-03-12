@@ -6,6 +6,5 @@ defmodule UnSpatioTDB.Locale do
             epsilons: nil,
             topology: nil,
             metric: nil,
-            proptau: nil,
             coupling: nil
 end

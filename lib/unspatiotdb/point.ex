@@ -6,5 +6,17 @@ defmodule UnSpatioTDB.Point do
   alias UnSpatioTDB.Locale
   alias UnSpatioTDB.Point
 
+  @registry_point :point_registry
+
+  # API
+
+  def start_link([point_id, locale]) do
+    GenServer.start_link @me, [point_id, tau, locale], name: via_tuple(point_id)
+  end
+
+  # Server
+  def init([point_id, config]) do
+
+  end
 
 end

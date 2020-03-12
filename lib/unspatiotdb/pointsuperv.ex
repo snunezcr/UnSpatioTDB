@@ -12,8 +12,8 @@ defmodule UnSpatioTDB.PointSupervisor do
     DynamicSupervisor.init(strategy: :one_for_one)
   end
 
-  def create_point(point_id, locale) do
-    spec = {UnSpatioTDB.Point, [point_id, locale]}
+  def create_point(point_id, point) do
+    spec = {UnSpatioTDB.Point, [point_id, point]}
     DynamicSupervisor.start_child(@me, spec)
   end
 
