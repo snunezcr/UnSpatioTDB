@@ -25,9 +25,7 @@ defmodule UnSpatioTDB.MixProject do
 
   defp deps do
     [
-      {:typed_struct, "~> 0.1.4"},
-      {:complex_num, "~> 1.0.0"},
-      {:sbroker, "~> 1.0-beta"}
+      {:tensor, "~> 2.1"}
     ]
   end
 end

@@ -12,10 +12,17 @@ defmodule UnSpatioTDB.Application do
   use Application
   require Logger
 
+  @registry_point :point_registry
+  @registry_field :registry_registry
+
   def start(_type, _args) do
     Logger.info("UnSpatioTDB is initializing...")
 
-    children = []
+    children = [
+      { Registry, [keys: :unique, name: @registry_point]},
+      { Registry, [keys: :unique, name: @registry_field]},
+      { UnSpatioTDB.PointSupervisor, []},
+    ]
     opts = [ strategy: :one_for_one, name: UnSpatioTDB.Supervisor]
 
     Logger.info("Starting children and supervision processess...")
