@@ -14,7 +14,7 @@ defmodule UnSpatioTDB.PointFactory do
     GenServer.start_link @me, [ranges, locale, tau, dr], name: @me
   end
 
-  def stop(clk_id) do
+  def stop(point_id) do
     GenServer.cast @me, :stop
   end
 

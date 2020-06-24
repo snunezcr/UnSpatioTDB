@@ -25,7 +25,8 @@ defmodule UnSpatioTDB.MixProject do
 
   defp deps do
     [
-      {:tensor, "~> 2.1"}
+      {:tensor, "~> 2.1"},
+      {:poison, "~> 3.1"}
     ]
   end
 end

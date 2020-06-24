@@ -3,7 +3,7 @@ defmodule UnSpatioTDB.Point do
   Implementation of a Point using a Locale as an internal driver.
   """
   use GenServer, restart: :transient
-  alias UnSpatioTDB.Locale
+  alias UnSpatioTDB.LocaleSpec
   alias UnSpatioTDB.Point
 
   @registry_point :point_registry
@@ -16,7 +16,7 @@ defmodule UnSpatioTDB.Point do
 
   # Server
   def init([point_id, config]) do
-
+    {:ok, {point_id, config}}
   end
 
 end

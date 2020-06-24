@@ -1,10 +1,9 @@
-defmodule UnSpatioTDB.Locale do
+defmodule UnSpatioTDB.LocaleSpec do
   defstruct dof: 0,
             alphas: nil,
             betas: nil,
+            gammas: nil,
             deltas: nil,
-            epsilons: nil,
             topology: nil,
-            metric: nil,
-            coupling: nil
+            metric: nil
 end
