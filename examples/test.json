@@ -1,0 +1,20 @@
+{
+    "experiment": {
+        "metadata" : {
+            "title" : "A simple field experiment",
+            "description" : "Test code",
+            "authors" : [
+                { "name" : "Santiago Nunez-Corrales", "org" : "UIUC"},
+                { "name" : "Eric Jakobsson", "org" : "UIUC"}
+            ],
+            "version" : "0.0.1",
+            "date" : "2020.06.25"
+        },    
+        "locale" : {
+            "dof" : 3
+        },
+        "field" : {
+            "groundstate": 1
+        }
+    }
+}

@@ -13,7 +13,7 @@ defmodule UnSpatioTDB.MixProject do
 
   def application do
     [
-      applications: [:complex_num],
+      applications: [],
       extra_applications: [:logger],
       mod: {
         UnSpatioTDB.Application, []

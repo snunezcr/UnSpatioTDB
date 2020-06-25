@@ -1,4 +1,4 @@
-# Santiago Nunez-Corrales @ 2019
+# Santiago Nunez-Corrales @ 2020
 #
 # University of Illinois at Urbana-Champaign
 
@@ -20,7 +20,6 @@ defmodule UnSpatioTDB.Application do
 
     children = [
       { Registry, [keys: :unique, name: @registry_point]},
-      { Registry, [keys: :unique, name: @registry_field]},
       { UnSpatioTDB.PointSupervisor, []},
     ]
     opts = [ strategy: :one_for_one, name: UnSpatioTDB.Supervisor]
