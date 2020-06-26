@@ -6,13 +6,13 @@
 # For the moment, a scalar value is one with zero dimensions
 defmodule UnspatioTDB.Field do
   use Tensor
-  alias UnSpatioTDB.Field
 
   defstruct dim: [],
-            value: Tensor.new([])
+            value: Tensor.new([]),
+            hysterons: Tensor.new([],[3,1])
 
-  def new(dims, values) do
-    %Field{dim: dims, value: Tensor.new(values)}
+  def new(dims, values, hysts) do
+    %UnspatioTDB.Field{dim: dims, value: Tensor.new(values), hysterons: Tensor.new([3], [hysts])}
   end
 
   def is_scalar(f) do
